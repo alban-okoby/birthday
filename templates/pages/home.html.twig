@@ -1,0 +1,257 @@
+{% extends 'base.html.twig'%} {% block stylesheets %}
+<style>
+    .active-img {
+        animation-duration: 2s;
+        animation-name: bouge;
+        animation-iteration-count: infinite;
+        transform: scale(.7);
+        animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    @keyframes bouge {
+        0% {
+            transform: scale(.7);
+        }
+        30% {
+            transform: scale(.4);
+        }
+        40% {
+            transform: scale(.6);
+        }
+        60% {
+            transform: scale(.4);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    img {
+        height: max(10rem);
+    }
+    
+    .heading {
+        margin-top: -95px;
+    }
+    
+    .name {
+        font-weight: bold;
+    }
+    
+    p {
+        font-family: arial;
+    }
+</style> {% endblock %} {% block body %}
+<section class="lg-bloc">
+    <section id="photo">
+
+        <div class="heading">
+
+            <img src="{{ asset('images/e1.jpg')}}" class="img-circle responsive" alt="Alban Okoby photo" style="width:35%; height:20% ;float:right" />
+
+            <h2><span><img src="images/box1_101952.png" class="active-img" alt=""></span>Happy Birthday Mr EDY <span style="color:orangered; font-size:100%; text-align:center"> <img src="images/box2_101951.png" alt="" class="active-img"></span> </h2>
+            <h3>Coatch, Entrepreneur, Styliste, Developpeur Web et Etudiant en Sciences Informatique</h3>
+            <p style="float:letf"> <span class="name">Wilfried</span> vous êtes une personne créative et pleine d'imagination ce qui en fait souvent de vous un artiste talentueux et difficile à imiter. Votre intelligence émotionnelle vous permet de comprendre rapidement une
+                situation donnée. Rien ne vous échappe même pas ce qui inclut les détails les plus infimes. Dans la trahison,
+                <span class="name">Wilfried</span> compte parmi les personnes qui pardonnent, mais qui n'oublient pas. Votre mémoire affective très développée fait que cet individu se souvient des évènements les plus marquants de sa vie. Wilfried est
+                également de nature réfléchie et responsable. C'est le genre de personne à s'isoler et à analyser attentivement les situations avant de prendre une quelconque décision. Dans ses relations amoureuses, Wilfried fait souvent l'erreur de succomber
+                pour des partenaires peu amènes, car les sentiments l'envahissent vite et l'aveuglent au point de lui faire perdre tout discernement. Lorsque la bonne personne lui tombera enfin sous la main, <span class="name">Wilfried</span> commettra
+                souvent l'erreur de la laisser partir et de continuer à fréquenter les mauvaises personnes. On lui dira de retenir les gens qui valent vraiment la peine d'être gardés. <br> " Puisse God protège god ". Cerveau+ ton binôme.
+            </p>
+            {# <a href="#" class="button1">Télécharger mon CV</a> #}
+        </div>
+    </section>
+
+    <section id="competences" style="margin-top: ;">
+        <div class="red-divide"></div>
+        <div class="heading">
+            <h3 style="color:red;text-decoration: overline;"><span style="color:black;">NOUS VOUS SOUHAITONS </span></h3>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 90%; background:linear-gradient(to left,red, #c6ff00">Santé</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="progress">
+                        <div class="progress-bar pro" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%; background:linear-gradient(to left, darkorange, #c6ffA0">ARGENT</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 90%; background:linear-gradient(to left, lime, #0097a7, #0097a7">Progrès</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 100%; background:linear-gradient(to left, lime, #0097a7">Longévité</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 70%; background:linear-gradient(to right,pink, pink">Amour</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%; background:linear-gradient(to right,#AAA, darkorange, #db60ac, red, lime">Beaucoup de Crypto</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="experiences">
+        <div class="container">
+            <div class="white-divider"></div>
+            <div class="heading">
+                {# // Section PROFESSIONNELLE #}
+
+                <section id="portfolio">
+                    <div class="container">
+                        <aside class="row">
+                            <div class="white-divider">
+                                <h2 style="margin-top:-60px;color:orange;text-decoration:overline;color:orangered;"><span style="color:black">Styliste</span></h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item">
+                                                <img class="first-slide img-responsive" src="{{ asset('images/e2.jpg') }}" alt="First slide">
+
+                                            </div>
+                                            <div class="item">
+                                                <img class="second-slide img-responsive" src="{{ asset('images/e1.jpg') }}" alt="Alban and Anderson/> ">
+                                                <div class="container">
+                                                    <div class="carousel-caption">
+                                                        <h3>" C'est ici que la lutte commence "</h3>
+                                                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Aimons-nous vivants !</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item active">
+                                                <img class="third-slide img-responsive" src="{{ asset('images/s1.jpg') }}" alt="Third slide">
+                                                <div class="container">
+                                                    <div class="carousel-caption">
+                                                        <h3>" La mémoire est la béquille de l'intélligence "</h3>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4" border="2px solid blue">
+                                    <div id="secondCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#secondCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#secondCarousel" data-slide-to="1"></li>
+                                            <li data-target="#secondCarousel" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img class="first-slide img-responsive" src="{{ asset('images/e1.jpg') }}" alt="First slide">
+                                                <div class="container">
+                                                    <div class="carousel-caption">
+                                                        <h3>Allons au boulot</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img class="second-slide img-responsive" src="{{ asset('images/e7.png') }}" alt="Alban and Anderson/> ">
+                                                <div class="container">
+                                                    <div class="carousel-caption">
+                                                        <h3>" Nos actes doivent être cités en example "</h3>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img class="third-slide img-responsive" src="{{ asset('images/s1.jpg') }}" alt="Third slide">
+                                                <div class="container">
+                                                    <div class="carousel-caption">
+                                                        <h3>" Ma confection "</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="left carousel-control" href="#secondCarousel" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#secondCarousel" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div id="thirdCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#thirdCarousel" data-slide-to="1"></li>
+                                            <li data-target="#thirdCarousel" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img class="first-slide img-responsive" src="{{ asset('images/s2.jpg') }}" alt="First slide">
+                                                <div class="container">
+                                                    <div class="carousel-caption">
+                                                        <h3>" Apprécier par vous même !!"</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img class="second-slide img-responsive" src="{{ asset('images/e5.jpg') }}" alt="">
+                                                <div class="container">
+                                                    <div class="carousel-caption">
+                                                        {#
+                                                        <h3>" Garder toujours le sourire "</h3> #}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img class="third-slide img-responsive" src="{{ asset('images/e6.jpg') }}" alt="Third slide">
+                                                <div class="container">
+                                                    <div class="carousel-caption">
+                                                        <h3></h3>
+                                                        <p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="left carousel-control" href="#thirdCarousel" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Précédent</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#thirdCarousel" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Suivant</span>
+                                        </a>
+                                    </div>
+                                </div>
+                </section>
+                {% endblock %}

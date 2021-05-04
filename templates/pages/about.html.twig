@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h4> Cette page est en maintenance ..</h4>
+        
+        <div> <p>Il est précisicement : <strong> {{ 'now'|date('H:i')}}min </strong> chez vous.</p></div>
+        <section id="education" style="margin-bottom:100px">
+                    <div class="container">
+                        <div class="red-divider"></div>
+                        <div class="heading">
+                            <h3>FORMATION</h3>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="education-block">
+                                    <h5>Licence</h5>
+                                    <span class="glyphicon glyphicon-education"></span>
+                                    <h3>UVCI</h3>
+                                    <h5>Informatique et Sciences Numérique</h5>
+                                    <h4>Spécialisation : "Base de données"</h4>
+                                    <div class="red-divider"></div>
+                                    <p>Développeur d'applications web /mobile</p>
+                                    <p>Admin de base de données</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="education-block">
+                                    <h5>Certification</h5>
+                                    <span class="glyphicon glyphicon-education"></span>
+                                    <h3>Université OC</h3>
+                                    <h5>Informatique développeur d'Applications</h5>
+                                    <h4>Spécialisation : "Developpeur"</h4>
+                                    <div class="red-divider"></div>
+                                    <p> HTML5/CSS3/JS</p>
+                                    <p>PHP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+   
+{% endblock %}

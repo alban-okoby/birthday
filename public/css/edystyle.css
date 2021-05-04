@@ -1,0 +1,112 @@
+.banner img {
+    -moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    /* height: max(19rem, 1vh); */
+}
+
+.banner img:hover {
+    -moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+}
+
+.card-articles {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    padding-bottom: 1rem;
+}
+
+.card-articles> :last-child {
+    margin-bottom: 0;
+}
+
+.card-articles h4 {
+    margin-top: 1rem;
+    font-size: 1.65rem;
+    font-weight: 550;
+}
+
+.card-articles img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    -o-transform: scale(.97);
+}
+
+.card-articles img:hover {
+    transition: transform 200ms ease-out;
+    -o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transform: scale(.90);
+}
+
+.card-articles img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    -webkit-transform: scale(.95);
+}
+
+img:hover {
+    transition: transform 200ms ease-out;
+    -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transform: scale(.90);
+}
+
+.card-articles img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    -moz-transform: scale(.97);
+    /* height: max(19rem, 1vh); */
+}
+
+.card-articles img:hover {
+    transition: transform 250ms ease-out;
+    -moz-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transform: scale(.90);
+}
+
+img~* {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.card-wrapper-articles {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    grid-gap: 1.5rem;
+}
+
+.card-articles a {
+    color: black;
+}
+
+.card-articles :hover {
+    text-decoration: none;
+}
+
+.search-bar {
+    float: right;
+}
+
+.search-bar input {
+    padding: 11px 9px;
+    transform: translate(1px, 1px);
+    border-radius: .5rem .5rem;
+    z-index: 0;
+}
+
+@media all and (max-width: 764px) {
+    /* On Doit Redimentionner les images en bonne hauteur */
+    aside {
+        background: red;
+    }
+    .col-xs-9 {
+        width: 100%;
+    }
+    .card-wrapper-articles {
+        grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+    }
+}

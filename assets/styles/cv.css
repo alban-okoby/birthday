@@ -1,0 +1,269 @@
+/* Générale */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 45px 0 78px 0;
+}
+
+section .heading {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.red-divider {
+    width: 100px;
+    height: 3px;
+    background: orangered;
+    margin: 0 auto;
+}
+
+.white-divider {
+    width: 100px;
+    height: 3px;
+    background: white;
+    margin: 0 auto;
+}
+
+
+/* ABOUT */
+
+#about {
+    padding-top: 100px;
+    background-color: orangered;
+}
+
+.profile-picture {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+}
+
+#about .heading h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+#about .heading h3 {
+    color: black;
+}
+
+.button1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    transition: all 300ms ease;
+}
+
+.button1:hover {
+    background-color: white;
+    color: orangered;
+    text-decoration: none;
+}
+
+
+/* COMPETENCES */
+
+#competences {
+    background: white;
+}
+
+#competences .heading h2 {
+    color: orangered;
+}
+
+#competences .progress {
+    height: 100%;
+    margin: 25px 20px;
+    backface-visibility: #CCC;
+}
+
+#competences .progress-bar {
+    background: orange;
+}
+
+#competences .progress h5 {
+    text-shadow: 1px 1px 1px black;
+}
+
+
+/* EXPERIENCE PROFESSIONNELLE*/
+
+
+/* 
+#experiences * {
+    background-color: orange;
+}
+
+#experiences .heading h2 {
+    color: white;
+} */
+
+.timeline {
+    padding: 29px 11px;
+    position: relative;
+    ;
+}
+
+.timeline::before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    ;
+    content: " ";
+    width: 5px;
+    background-color: #323;
+    left: 50%;
+    margin-left: -2.5px;
+}
+
+.timeline>li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline>li::after {
+    clear: both;
+}
+
+.timeline>li::before,
+.timeline>li::after {
+    content: " ";
+    display: table;
+}
+
+.timeline li .timeline-badge {
+    color: rgb(238, 197, 61);
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25%;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.timeline-panel-container-inverted {
+    width: 50%;
+    float: right;
+}
+
+.timeline-panel-container-inverted {
+    width: 50%;
+    float: right;
+}
+
+.timeline-panel {
+    width: 50%;
+    float: right;
+    margin-right: 40px;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    padding: 20px 25px;
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline-panel-container-inverted .timeline-panel {
+    float: left;
+    margin-left: 40px;
+}
+
+.timeline-panel::after {
+    position: absolute;
+    top: 22px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid white;
+    border-right: 0 solid white;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline-panel-container-inverted .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+.timeline-heading h4 {
+    color: #d6dcde;
+}
+
+
+/* =================EDUCATION =========================== */
+
+#education {
+    background-color: white;
+}
+
+#education .heading h2 {
+    color: #d83c2e;
+}
+
+.education-block {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #CCC;
+}
+
+.education-block h5 {
+    margin-bottom: 15px;
+    color: #888;
+    font-size: 15px;
+}
+
+.education-block .glyphicon {
+    font-size: 40px;
+}
+
+.education-block h4 {
+    color: #d83c2e;
+}
+
+.education-block h4,
+.education-block .red-divider {
+    margin-bottom: 20px;
+}
+
+.education-block p {
+    font-weight: bold;
+}
+
+
+/* Coeur du footer */
+
+footer .heart {
+    color: hotpink;
+    background-color: hotpink;
+}
